@@ -33,7 +33,7 @@ export default function SectionCard({ title, icon, color, onPress, index }) {
   useEffect(() => {
     scale.value = withDelay(index * 80, withSpring(1, { damping: 12, stiffness: 100 }));
     opacity.value = withDelay(index * 80, withSpring(1));
-  }, []);
+  }, [index, opacity, scale]); // Add missing dependencies
 
   const gradientColors = [color, darkenColor(color, 20)]; // Create gradient
 

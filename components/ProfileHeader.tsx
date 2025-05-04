@@ -33,7 +33,7 @@ export default function ProfileHeader({ scrollY }) {
       withDelay(1500, withTiming(1, { duration: 500 })),
       withTiming(0, { duration: 500 })
     );
-  }, []);
+  }, [pulseAnim, rotateAnim]); // Add missing dependencies
 
   const headerStyle = useAnimatedStyle(() => {
     const height = interpolate(

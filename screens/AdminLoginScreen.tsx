@@ -119,11 +119,7 @@ export default function AdminLoginScreen() {
           >
             <Text style={styles.loginButtonText}>{loading ? 'Logging in...' : 'Login'}</Text>
           </TouchableOpacity>
-          
-          {/* Add hint for demo purposes
-          <Text style={styles.hintText}>
-            Hint: admin@gmail.com / Admin@123
-          </Text> */}
+        
         </View>
       </ScrollView>
     </KeyboardAvoidingView>
