@@ -1,5 +1,12 @@
-import './polyfills';
+import './polyfills'; // Import first!
 import 'react-native-url-polyfill/auto';
+
+// Try direct import of buffer if needed
+import { Buffer as BufferPolyfill } from 'buffer';
+if (typeof global.Buffer === 'undefined') {
+  global.Buffer = BufferPolyfill;
+}
+
 import { createClient } from '@supabase/supabase-js';
 import * as SecureStore from 'expo-secure-store';
 import { Platform } from 'react-native';
