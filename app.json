@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Sree Portfolio",
+    "slug": "sree-portfolio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3A0CA3"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3A0CA3"
+      },
+      "package": "com.sreehari.portfolio"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b9407627-e03e-4e0d-810f-a73596085bf2"
+      }
+    }
+  }
+}
